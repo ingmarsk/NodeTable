@@ -1,4 +1,5 @@
-
+// node app.js
+// http://localhost:8888/?num=5
 
 let http = require("http");
 const url = require('url');
@@ -15,7 +16,7 @@ function conexio(request, response) {
   let table = "<table border='2' style='border-color: black'>"
 
   for (i=0; i <= 10; i++) {
-    var col_1 = '' + num + ' * ' + i;
+    var col_1 = num + ' * ' + i;
     var col_2 = num * i;
     table = table + '<tr><td>' + col_1 + '</td><td>' + col_2 + '</td></tr>'
   }
